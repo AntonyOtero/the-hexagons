@@ -1,0 +1,2 @@
+# the-hexagons
+"Although they’re a fictional band, The Hexagaons have a website that will rival most of today’s biggest artists! This week’s project has been designed by London based graphic and digital designer Meara Withe (website and Twitter). You’ll hopefully already recognise her work from week 3 Lola’s project, so you’re in store again for another explosively colourful and heavily graphic visual treat."
