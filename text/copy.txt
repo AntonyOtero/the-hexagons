@@ -1,0 +1,52 @@
+Full site:
+Header text size: 16px with 1.5 line height
+Body size: 18px with 1.5 line height
+Heading size: 40px with 1.375 line-height 
+Width of page: 100%
+
+Tablet site:
+Header text size: 16px with 1.5 line height
+Body size: 16px with 1.5 line height
+Heading size: 32px with 1.375 line-height 
+
+Mobile site:
+Header text size: 10px with 1.5 line height
+Body size: 14px with 1.5 line height
+Heading size: 32px with 1.375 line-height 
+
+Fonts: 
+Headings: Open Sans
+Body: Roboto
+
+Colors:
+Black: #000000
+Blue: #2C9BFF
+Pink: #F9DBD7
+Grey: #F5F5F5
+
+-----
+
+About
+Music
+Shows
+Store
+
+About
+
+The Hexagons are a London-based duo, known for their all-embracing, distinctive music, ranging from electronic to pop to jazz.
+
+They’ve recently launched their new album ‘Hexagon’, which they will be touring in autumn 2017, so stay tuned to find a show near you! 
+
+Store
+
+All 
+Albums
+Singles
+Vinyl
+
+Hexagon (£25 vinyl)
+The Maze (£25 vinyl)
+Happy (£5 single)
+Red and Blue (£8 album)
+Shapeshifters (£12 album)
+Outburst (£5 single)
