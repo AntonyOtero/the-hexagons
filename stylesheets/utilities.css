@@ -1,6 +1,11 @@
 :root {
   --color-blue: #2C9BFF;
   --color-pink: #F9DBD7;
+  --color-grey: #F5F5F5;
+}
+
+.container {
+  padding: 25px;
 }
 
 .copy-md {
@@ -14,6 +19,7 @@
 .display-1 {
   font-size: 40px;
   font-weight: 700;
+  line-height: 1.375;
 }
 
 .display-2 {
