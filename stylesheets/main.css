@@ -1,5 +1,34 @@
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+}
+a {
+  padding-bottom: 5px;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: solid 1px black;
+}
+
+/* Header */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a:not(a:last-child) {
+  /* ^ targets all anchor elements inside the header's nav container excluding the final anchor element. */
+  margin-right: 35px;
+}
+
+/* Hero */
+
+.hero {
+  height: 600px;
+  background: center / cover no-repeat url("/assets/hero.jpg");
 }
