@@ -5,13 +5,22 @@
 }
 
 .trace {
+  box-sizing: border-box;
   border: 0.25pc solid red;
+}
+
+.selected {
+  border-bottom: 2px solid var(--color-blue);
 }
 
 .container { padding: 25px;}
 
 .row {
   display: flex;
+}
+
+.col-4 {
+  max-width: 33.33%;
 }
 
 .col-6 {
