@@ -4,8 +4,18 @@
   --color-grey: #F5F5F5;
 }
 
-.container {
-  padding: 25px;
+.trace {
+  border: 0.25pc solid red;
+}
+
+.container { padding: 25px;}
+
+.row {
+  display: flex;
+}
+
+.col-6 {
+  max-width: 50%;
 }
 
 .copy-md {

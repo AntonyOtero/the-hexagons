@@ -4,15 +4,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+
 a {
   padding-bottom: 5px;
   color: #000;
   text-decoration: none;
 }
 
-a:hover {
-  border-bottom: solid 1px black;
-}
+a:hover { border-bottom: solid 1px black; }
+
 
 /* Header */
 
@@ -31,4 +31,33 @@ header nav a:not(a:last-child) {
 .hero {
   height: 600px;
   background: center / cover no-repeat url("/assets/hero.jpg");
+}
+
+/* About */
+
+.about { color: var(--color-blue); }
+
+.about div {
+  padding: 65px;
+}
+
+.about .left {
+  background-color: var(--color-blue);
+}
+
+.about .right {
+  background-color: var(--color-pink);
+}
+
+.about img {
+  width: 100%;
+  max-width: 510px;
+}
+
+.about h2 {
+  margin: 0;
+}
+
+.about p {
+  max-width: 484px;
 }
