@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -16,6 +16,10 @@ a:hover { border-bottom: solid 1px black; }
 
 
 /* Header */
+
+header {
+  font-size: 16px;
+}
 
 header nav {
   display: flex;
@@ -83,11 +87,13 @@ header nav a:not(a:last-child) {
 .store .collection {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .store .album { 
   position: relative;
   max-width: 33.333%;
+  min-width: 320px;
 }
 
 .store .album .overlay {
