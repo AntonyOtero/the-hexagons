@@ -23,6 +23,7 @@ a:hover { border-bottom: solid 1px black; }
   padding: 15px 0;
   font-size: 16px;
   background:rgba(44, 155, 255, 0.25);
+  z-index: 100;
 }
 
 .logo {
@@ -66,7 +67,7 @@ a:hover { border-bottom: solid 1px black; }
   justify-content: center;
   padding: 65px;
   width: 50%;
-  }
+}
 
 .about-left { 
   background-color: var(--color-blue);
