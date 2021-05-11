@@ -18,7 +18,7 @@ a {
   border-bottom: solid 2px transparent;
 }
 
-a:hover { border-bottom: solid 1px black; }
+a:hover:not([class~="selected"]) { border-bottom: solid 2px black; }
 
 h2 {
   font-size: 40px;
@@ -123,11 +123,17 @@ h3 {
 }
 
 .store-header .filters {
+  display: flex;
+  /* flex-direction: column; */
   margin-bottom: 28px;
-  justify-content: left;
 }
 
-.store-header .tag {
+.filter-toggle {
+  font-weight: 400;
+  color:#cccccc;
+}
+
+.store-header a {
   margin-right: 25px;
 }
 
