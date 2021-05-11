@@ -88,21 +88,24 @@ a:hover { border-bottom: solid 1px black; }
   max-width: 484px;
 }
 
-/* Store */
+/* STORE */
 
 .store .container {
   margin: 0 auto;
-  max-width: 960px;
-  min-height: 720px;
+  max-width: 1020px;
 }
 
-.store h2,
-.store .filters {
-  margin-bottom: 20px;
+.store-header h2 {
+  margin-bottom: 18px;
 }
 
-.store .filters {
+.store-header .filters {
+  margin-bottom: 28px;
   justify-content: left;
+}
+
+.store-header .tag {
+  margin-right: 25px;
 }
 
 .store .collection {
