@@ -4,11 +4,11 @@
     font-size: 16px;
   }
 
-  .display-1 {
+  h2 {
     font-size: 32px;
   }
 
-  .display-2 {
+  h3 {
     font-size: 28px;
   }
 
@@ -34,19 +34,15 @@
     font-size: 14px;
   }
 
-  header {
+  .main-header {
     font-size: 10px;
   }
 
-  header .logo img {
+  .main-header .logo img {
     max-width: 140px;
   }
 
-  .display-2 {
-    font-size: 20px;
-  }
-
-  .copy-lg {
-    font-size: 14px;
+  .about-right p {
+    max-width: 384px;
   }
 }
