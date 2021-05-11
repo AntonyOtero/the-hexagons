@@ -15,55 +15,75 @@ a {
 a:hover { border-bottom: solid 1px black; }
 
 
-/* Header */
+/* HEADER */
 
-header {
+.main-header {
+  position: fixed;
+  width: 100vw;
+  padding: 15px 0;
   font-size: 16px;
+  background:rgba(44, 155, 255, 0.25);
 }
 
-header nav {
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-nav {
   display: flex;
   justify-content: space-between;
 }
 
-header nav a:not(a:last-child) {
+.nav-left { margin-left: 25px; }
+.nav-right { margin-right: 25px; }
+
+.main-nav a:not(a:last-child) {
   /* ^ targets all anchor elements inside the header's nav container excluding the final anchor element. */
   margin-right: 35px;
 }
 
-/* Hero */
+/* HERO */
 
 .hero {
   height: 600px;
   background: center / cover no-repeat url("/assets/hero.jpg");
 }
 
-/* About */
+/* ABOUT */
 
-.about { color: var(--color-blue); }
-
-.about div {
-  padding: 65px;
+.about { 
+  display: flex;
+  color: var(--color-blue); 
 }
 
-.about .left {
+.about-left,
+.about-right { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 65px;
+  width: 50%;
+  }
+
+.about-left { 
   background-color: var(--color-blue);
 }
 
-.about .right {
-  background-color: var(--color-pink);
-}
+.about-right { background-color: var(--color-pink); }
 
-.about img {
+.about-left img {
   width: 100%;
   max-width: 510px;
 }
 
-.about h2 {
+.about-right h2 {
   margin: 0;
 }
 
-.about p {
+.about-right p {
   max-width: 484px;
 }
 
