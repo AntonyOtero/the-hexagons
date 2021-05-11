@@ -1,3 +1,9 @@
+:root {
+  --color-blue: #2C9BFF;
+  --color-pink: #F9DBD7;
+  --color-grey: #F5F5F5;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -14,74 +20,115 @@ a {
 
 a:hover { border-bottom: solid 1px black; }
 
-
-/* Header */
-
-header {
-  font-size: 16px;
+h2 {
+  font-size: 40px;
+  line-height: 1.375;
 }
 
-header nav {
+h3 {
+  font-size: 36px;
+}
+
+/* HEADER */
+
+.main-header {
+  position: fixed;
+  width: 100vw;
+  padding: 15px 0;
+  font-size: 16px;
+  background:rgba(44, 155, 255, 0.25);
+  z-index: 100;
+}
+
+.main-header .container {
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-nav {
   display: flex;
   justify-content: space-between;
 }
 
-header nav a:not(a:last-child) {
+.nav-left { margin-left: 25px; }
+.nav-right { margin-right: 25px; }
+
+.main-nav a:not(a:last-child) {
   /* ^ targets all anchor elements inside the header's nav container excluding the final anchor element. */
   margin-right: 35px;
 }
 
-/* Hero */
+/* HERO */
 
 .hero {
   height: 600px;
   background: center / cover no-repeat url("/assets/hero.jpg");
 }
 
-/* About */
+/* ABOUT */
 
-.about { color: var(--color-blue); }
-
-.about div {
-  padding: 65px;
+.about { 
+  display: flex;
+  color: var(--color-blue); 
 }
 
-.about .left {
+.about-left,
+.about-right { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 65px;
+  width: 50%;
+}
+
+.about-left { 
   background-color: var(--color-blue);
 }
 
-.about .right {
-  background-color: var(--color-pink);
-}
+.about-right { background-color: var(--color-pink); }
 
-.about img {
+.about-left img {
   width: 100%;
   max-width: 510px;
 }
 
-.about h2 {
+.about-right h2 {
   margin: 0;
-}
-
-.about p {
+  width: 100%;
   max-width: 484px;
 }
 
-/* Store */
+.about-right p {
+  max-width: 484px;
+}
+
+/* STORE */
 
 .store .container {
   margin: 0 auto;
-  max-width: 960px;
-  min-height: 720px;
+  padding: 0 25px;
+  max-width: 1020px;
 }
 
-.store h2,
-.store .filters {
-  margin-bottom: 20px;
+.store-header h2 {
+  margin-bottom: 18px;
 }
 
-.store .filters {
+.store-header .filters {
+  margin-bottom: 28px;
   justify-content: left;
+}
+
+.store-header .tag {
+  margin-right: 25px;
 }
 
 .store .collection {
@@ -131,4 +178,14 @@ footer {
 
 footer img {
   max-width: 150px;
+}
+
+/* UTILITIES */
+.selected {
+  border-bottom: 2px solid var(--color-blue);
+}
+
+.trace {
+  box-sizing: border-box;
+  border: 0.25pc solid red;
 }

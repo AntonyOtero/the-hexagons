@@ -1,14 +1,14 @@
-/* Tablet */
+/* TABLET */
 @media (max-width: 900px){
   body {
     font-size: 16px;
   }
 
-  .display-1 {
+  h2 {
     font-size: 32px;
   }
 
-  .display-2 {
+  h3 {
     font-size: 28px;
   }
 
@@ -16,39 +16,33 @@
     flex-direction: column-reverse;
   }
 
-  .about div {
+  .about-left,
+  .about-right {
+    align-items: center;
+    padding: 65px 0;
+    width: 100%;
+  }
+
+  .about-right {
     text-align: center;
-  }
-
-  .about .col-6 {
-    max-width: 100%;
-  }
-
-  .about .right p {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
-/* Phone */
+/* PHONE */
 @media (max-width: 640px) {
   body {
     font-size: 14px;
   }
 
-  header {
+  .main-header {
     font-size: 10px;
   }
 
-  header .logo img {
+  .main-header .logo img {
     max-width: 140px;
   }
 
-  .display-2 {
-    font-size: 20px;
-  }
-
-  .copy-lg {
-    font-size: 14px;
+  .about-right p {
+    max-width: 384px;
   }
 }
