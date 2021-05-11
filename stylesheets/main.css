@@ -153,6 +153,7 @@ h3 {
   opacity: 0;
   color: #fff;
   background-color: rgba(44, 155, 255, 0.7);
+  transition: opacity 0.5s ease;
 }
 
 .store .album:hover .overlay {
