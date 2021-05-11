@@ -26,6 +26,11 @@
   .about-right {
     text-align: center;
   }
+
+  .store .album { 
+    max-width: 50%;
+    /* min-width: 320px; */
+  }
 }
 
 /* PHONE */
@@ -44,5 +49,9 @@
 
   .about-right p {
     max-width: 384px;
+  }
+
+  .store .album {
+    max-width: 100%;
   }
 }
