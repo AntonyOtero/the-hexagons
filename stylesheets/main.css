@@ -119,22 +119,32 @@ h3 {
 }
 
 .store-header h2 {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .store-header .filters {
   display: flex;
-  /* flex-direction: column; */
-  margin-bottom: 28px;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .filter-toggle {
   font-weight: 400;
   color:#cccccc;
+  display: none;
 }
 
 .store-header a {
   margin-right: 25px;
+}
+
+.tags-container {
+  margin-top: 0;
+  padding: 0;
+}
+
+.tags-container li {
+  display: inline;
 }
 
 .store .collection {

@@ -51,6 +51,16 @@
     max-width: 384px;
   }
 
+  .filter-toggle {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .tags-container li {
+    display: block;
+    margin-bottom: 15px;
+  }
+
   .store .album {
     max-width: 100%;
   }
