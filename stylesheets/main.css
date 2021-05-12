@@ -29,7 +29,9 @@ h3 {
   font-size: 36px;
 }
 
-/* HEADER */
+/*//////////////////
+////// HEADER //////
+//////////////////*/
 
 .main-header {
   position: fixed;
@@ -65,14 +67,18 @@ h3 {
   margin-right: 35px;
 }
 
-/* HERO */
+/*////////////
+//// HERO ////
+////////////*/
 
 .hero {
   height: 600px;
   background: center / cover no-repeat url("./assets/hero.jpg");
 }
 
-/* ABOUT */
+/*///////////////
+///// ABOUT /////
+///////////////*/
 
 .about { 
   display: flex;
@@ -110,7 +116,9 @@ h3 {
   max-width: 484px;
 }
 
-/* STORE */
+/*///////////////
+///// STORE /////
+///////////////*/
 
 .store .container {
   margin: 0 auto;
@@ -167,7 +175,9 @@ h3 {
   height: 100%;
 }
 
-/* Footer */
+/*//////////////////
+////// FOOTER //////
+//////////////////*/
 
 footer {
   margin-top: 60px;
@@ -179,7 +189,10 @@ footer img {
   max-width: 150px;
 }
 
-/* UTILITIES */
+/*///////////////////////////
+///////// UTILITIES /////////
+///////////////////////////*/
+
 .selected {
   border-bottom: 2px solid var(--color-blue);
 }
