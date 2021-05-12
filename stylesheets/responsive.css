@@ -1,4 +1,6 @@
-/* TABLET */
+/*//////////////////
+////// TABLET //////
+//////////////////*/
 @media (max-width: 900px){
   body {
     font-size: 16px;
@@ -29,11 +31,12 @@
 
   .store .album { 
     max-width: 50%;
-    /* min-width: 320px; */
   }
 }
 
-/* PHONE */
+/*///////////////
+///// PHONE /////
+///////////////*/
 @media (max-width: 640px) {
   body {
     font-size: 14px;

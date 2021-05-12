@@ -38,7 +38,7 @@ h3 {
   width: 100vw;
   padding: 15px 0;
   font-size: 16px;
-  background:rgba(44, 155, 255, 0.25);
+  background:rgba(44, 155, 255, 0.5);
   z-index: 100;
 }
 
@@ -73,7 +73,7 @@ h3 {
 
 .hero {
   height: 600px;
-  background: center / cover no-repeat url("./assets/hero.jpg");
+  background: center / cover no-repeat url("../assets/hero.jpg");
 }
 
 /*///////////////
