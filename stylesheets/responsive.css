@@ -27,7 +27,11 @@
     text-align: center;
   }
 
-  .store .album { 
+  .filter-toggle:hover {
+      border-bottom-color: transparent !important;
+  }
+
+  .store .record { 
     max-width: 50%;
     /* min-width: 320px; */
   }
@@ -56,12 +60,16 @@
     margin-top: 20px;
   }
 
+  .tags-container {
+    display: none;
+  }
+
   .tags-container li {
     display: block;
     margin-bottom: 15px;
   }
 
-  .store .album {
+  .store .record {
     max-width: 100%;
   }
 }
