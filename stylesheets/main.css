@@ -18,7 +18,7 @@ a {
   border-bottom: solid 2px transparent;
 }
 
-a:hover { border-bottom: solid 1px black; }
+a:hover:not([class~="selected"]) { border-bottom: solid 2px black; }
 
 h2 {
   font-size: 40px;
@@ -124,19 +124,37 @@ h3 {
   margin: 0 auto;
   padding: 0 25px;
   max-width: 1020px;
+  min-height: 695px;
 }
 
 .store-header h2 {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+.store-header a {
+  margin-right: 25px;
 }
 
 .store-header .filters {
-  margin-bottom: 28px;
-  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.store-header .tag {
-  margin-right: 25px;
+.filter-toggle {
+  font-weight: 400;
+  color:#b4b4b4;
+  display: none;
+}
+
+
+.tags-container {
+  margin-top: 0;
+  padding: 0;
+}
+
+.tags-container li {
+  display: inline;
 }
 
 .store .collection {
@@ -144,12 +162,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-.store .album { 
+.store .record { 
   position: relative;
   max-width: 33.333%;
 }
 
-.store .album .overlay {
+.store .record .overlay {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -162,15 +180,15 @@ h3 {
   transition: opacity 0.5s ease-in-out;
 }
 
-.store .album:hover .overlay {
+.store .record:hover .overlay {
   opacity: 1;
 }
 
-.store .album .title { margin: 10px 0 0 15px; }
+.store .record .title { margin: 10px 0 0 15px; }
 
-.store .album .price { margin: 0 0 10px 15px; }
+.store .record .price { margin: 0 0 10px 15px; }
 
-.store .album img {
+.store .record img {
   width: 100%;
   height: 100%;
 }
@@ -195,6 +213,10 @@ footer img {
 
 .selected {
   border-bottom: 2px solid var(--color-blue);
+}
+
+.hidden {
+  display: none;
 }
 
 .trace {
