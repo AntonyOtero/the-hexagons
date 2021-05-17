@@ -63,10 +63,6 @@
     margin-top: 20px;
   }
 
-  .tags-container {
-    display: none;
-  }
-
   .tags-container li {
     display: block;
     margin-bottom: 15px;

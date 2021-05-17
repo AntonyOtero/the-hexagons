@@ -1,38 +1,32 @@
 const filterToggle = document.querySelector(".filter-toggle");
-const tagsContainer = document.querySelector(".tags-container");
-const tags = document.querySelectorAll(".tag");
+const filterContainer = document.querySelector(".tags-container");
+const filterLabels = document.querySelectorAll(".tag");
+filterContainer.classList.toggle("hidden");
 
 const records = document.querySelectorAll(".record");
-const albums = document.querySelectorAll(".albums");
-const singles = document.querySelectorAll(".singles");
-const vinyl = document.querySelectorAll(".vinyl");
-
 
 
 const toggleDisplay = tagName => {
-  if (tagName == "All") {
-    tagName = "record";
-  }
+  if (tagName == "All") tagName = "record";
   records.forEach( record => {
-    record.classList.remove("hidden");
-    if (!record.classList.contains(tagName.toLowerCase())) {
-      record.classList.toggle("hidden");
+    let recordClasses = record.classList;
+
+    recordClasses.remove("hidden");
+    if (!recordClasses.contains(tagName.toLowerCase())) {
+      recordClasses.toggle("hidden");
     }
   });
 }
 
 filterToggle.addEventListener("click", (event) => {
-  if (event.target.innerText == "Show filters") {
-    event.target.innerText = "Hide filters";
-    tagsContainer.style.display = "block";
-  } else {
-    event.target.innerText = "Show filters";
-    tagsContainer.style.display = "none";
-  }
+  let targetText = event.target.innerText;
+
+  (targetText == "Show filters") ? targetText = "Hide filters" : targetText = "Show filters";
+  filterContainer.classList.toggle("hidden");
 });
 
-tags.forEach( tag => {
-  tag.addEventListener("click", event => {
+filterLabels.forEach( label => {
+  label.addEventListener("click", event => {
     let selected = document.querySelector(".selected");
     let targetClasses = event.target.classList;
     let targetText = event.target.innerText;
@@ -42,6 +36,5 @@ tags.forEach( tag => {
       targetClasses.toggle("selected");
       toggleDisplay(targetText);
     } 
-
   });
 });
