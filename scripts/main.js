@@ -1,8 +1,6 @@
 const filterToggle = document.querySelector(".filter-toggle");
 const filterContainer = document.querySelector(".tags-container");
 const filterLabels = document.querySelectorAll(".tag");
-filterContainer.classList.toggle("hidden");
-
 const records = document.querySelectorAll(".record");
 
 
@@ -18,10 +16,8 @@ const toggleDisplay = tagName => {
   });
 }
 
-filterToggle.addEventListener("click", (event) => {
-  let targetText = event.target.innerText;
-
-  (targetText == "Show filters") ? targetText = "Hide filters" : targetText = "Show filters";
+filterToggle.addEventListener("click", (e) => {
+  (e.target.innerText == "Hide filters") ? e.target.innerText = "Show filters" : e.target.innerText = "Hide filters";
   filterContainer.classList.toggle("hidden");
 });
 

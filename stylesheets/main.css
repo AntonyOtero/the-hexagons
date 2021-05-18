@@ -146,6 +146,10 @@ h3 {
   display: none;
 }
 
+a.filter-toggle:hover {
+  border-color: transparent;
+}
+
 .store-header a {
   margin-right: 25px;
 }
@@ -164,12 +168,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-.store .album { 
+.store .record { 
   position: relative;
   max-width: 33.333%;
 }
 
-.store .album .overlay {
+.store .record .overlay {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -183,15 +187,15 @@ h3 {
   transition: opacity 0.25s ease-in-out;
 }
 
-.store .album:hover .overlay {
+.store .record:hover .overlay {
   opacity: 1;
 }
 
-.store .album .title { margin: 10px 0 0 15px; }
+.store .record .title { margin: 10px 0 0 15px; }
 
-.store .album .price { margin: 0 0 10px 15px; }
+.store .record .price { margin: 0 0 10px 15px; }
 
-.store .album img {
+.store .record img {
   width: 100%;
   height: 100%;
 }
@@ -221,4 +225,8 @@ footer img {
 .trace {
   box-sizing: border-box;
   border: 0.25pc solid red;
+}
+
+.hidden {
+  display: none;
 }
