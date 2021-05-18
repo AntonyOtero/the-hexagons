@@ -29,11 +29,7 @@
     text-align: center;
   }
 
-  .filter-toggle:hover {
-      border-bottom-color: transparent !important;
-  }
-
-  .store .record { 
+  .store .album { 
     max-width: 50%;
   }
 }
@@ -68,7 +64,7 @@
     margin-bottom: 15px;
   }
 
-  .store .record {
+  .store .album {
     max-width: 100%;
   }
 }
